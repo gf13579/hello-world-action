@@ -1,0 +1,12 @@
+name: 'Hello World Action'
+description: 'Greets a user by name'
+inputs:
+  name:
+    description: 'Name to greet'
+    required: true
+    default: 'World'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "Hello ${{ inputs.name }}"
+
